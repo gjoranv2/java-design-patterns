@@ -35,4 +35,4 @@ fi
 df -h .
 
 time mvn clean install -U -V -e -DskipTests=true -Dmaven.javadoc.skip=true
-time mvn install -nsu -q -V -e -Dmaven.test.redirectTestOutputToFile=true
+time mvn install -nsu -q -T 2.0C -V -e -Dmaven.test.redirectTestOutputToFile=true
