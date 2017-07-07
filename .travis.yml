@@ -1,5 +1,8 @@
 sudo: required
 
+services:
+   - docker
+
 language: java
 
 jdk:
@@ -15,5 +18,5 @@ before_install:
 
 install: true
 
-script: ./gv-build.sh
+script: docker/vespa-ci.sh
 
