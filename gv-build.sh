@@ -26,8 +26,6 @@
 set -e
 set -x
 
-NUM_CORES=$(nproc --all)
-
 if [ "$(uname)" != "Darwin" ]; then
     free -m
 fi
