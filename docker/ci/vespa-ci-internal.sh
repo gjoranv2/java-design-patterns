@@ -22,10 +22,10 @@ cd java-design-patterns
 pwd
 ls -l
 
-time mvn clean install -U -V -e -DskipTests=true -Dmaven.javadoc.skip=true
+time mvn clean install -U -V -e -q -DskipTests=true -Dmaven.javadoc.skip=true
 
 export DISPLAY=:99.0
-sh -e /etc/init.d/xvfb start
+/usr/bin/Xvfb :1 -screen 0 1152x900x8&
 time mvn install -T 2.0C -nsu -q -V -e -Dmaven.test.redirectTestOutputToFile=true
 
 #MAVEN_OPTS="-Xms128m -Xmx512m" mvn install -Dmaven.test.redirectTestOutputToFile=true
