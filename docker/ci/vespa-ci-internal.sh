@@ -11,14 +11,11 @@ df -h .
 
 NUM_CORES=$(nproc --all)
 
-#SOURCE_DIR=~/java-design-patterns
-#mkdir "${SOURCE_DIR}"
-#git clone --no-hardlinks /java-design-patterns "${SOURCE_DIR}"
+SOURCE_DIR=~/java-design-patterns
+mkdir "${SOURCE_DIR}"
+cp -r /java-design-patterns/* "${SOURCE_DIR}"/
 
-#cd "${SOURCE_DIR}"
-
-whoami
-cd java-design-patterns
+cd "${SOURCE_DIR}"
 pwd
 ls -l
 
